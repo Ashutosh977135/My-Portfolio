@@ -353,6 +353,20 @@ body {
     transform: scale(1.08);
     transition: transform 0.5s ease-in;
   }
+  @media (max-width: 700px){
+    #Portfolio {
+      padding: 100px 20px 100px 20px;
+      text-align: center;
+    }
+    .img1{
+      object-fit: cover;
+    }
+    .work-list{
+      grid-gap: 10px;
+
+    } 
+     
+  }
   /* contact */
   #contact-section{
     padding: 150px 20px 80px 20px;
@@ -464,6 +478,57 @@ body {
     margin-top: 15px;
     cursor: pointer;
    }
+
+    /* Responsive Design */
+  @media (max-width: 700px) {
+    #contact-section{
+      padding: 0px 20px 70px 20px;
+       
+    }
+    .contact-left{
+    
+      
+      margin-top: 0px;
+       
+    }
+
+    .contact-row{
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      gap: 0px;
+    }
+
+    
+    .contact-rigth form{
+     
+      margin-left: 0px;
+      margin-top: 10px;
+    
+      
+    
+    }
+     
+     form input,form textarea{
+      width: 100%;
+      border: 0;
+      outline: none;
+      padding: 10px 0px ;
+      margin: 10px 0;
+      color: #333;
+      font-size: 10px;
+      
+     }  
+  
+     form .btn{
+       
+      padding: 10px 40px;
+      font-size: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+     }
+  }
+   /* copyright */
 
    .Copyright{
     width: 100%;
