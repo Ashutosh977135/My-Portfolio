@@ -244,13 +244,14 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbys8IM0W6ghRxn2zRELaGYAtioXmpj4deEEE7WKbZfiU7rLJi28lGagQY1tbHiuARGqQQ/exec'
       const form = document.forms['submit-to-google-sheet']
-      const msg=documnet.getElementById("msg")
+       
     
       form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response =>  {
-            msg.innerHTML="Message sent Sucessfully"
+            
+            alert("Message sent Sucessfully");
             setTimeout(function(){
               msg.innerHTML=" "
             },5000)
