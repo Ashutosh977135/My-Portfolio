@@ -75,8 +75,8 @@ nav ul li a:hover::after{
      
     display: flex;
     justify-content:space-around;
-    margin-top: 150px;
-    margin-bottom: 120px;
+    margin-top: 120px;
+    margin-bottom: 100px;
      
 }
 .content{
@@ -586,23 +586,40 @@ body {
    @media only screen and (max-width:700px){
     #main{
       flex-direction: column ;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      margin-top: 80px;
+      margin-bottom: 10px;
+       
+
     }
       .content
       {
-        max-width: 100%;
+        max-width: 80%;
         padding: 20px;
+        font-size: 20px;
       }
-      .img{
-        padding: 20px 70px;
+      .content h1{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .content h1 span{
+        color:#3b82f6
+    }
+     
+       .imge{
+
+        padding: 20px ;
+      }
+       .imge img{
+        height: 250px;
+        width: 250px;
+
       }
 
    
 
    }
-   #msg{
-    color: #61b752;
-    margin-top: -20px;
-    display: block;
-
-   }
+   
    
